@@ -1,6 +1,6 @@
 FROM maven:3-jdk-8-alpine as builder
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/application
 
 COPY . /usr/src/application
 RUN mvn package
