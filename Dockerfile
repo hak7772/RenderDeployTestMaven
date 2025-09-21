@@ -14,7 +14,7 @@ FROM openjdk:8-jre-slim
 # Установите рабочую директорию для приложения.
 WORKDIR /app
 # Скопируйте jar-файл из этапа сборки.
-COPY --from=builder /app/target/*.jar app.jar
+COPY app/target/*.jar app.jar
 # Откройте порт.
 EXPOSE 8080
 # Запустите приложение.
