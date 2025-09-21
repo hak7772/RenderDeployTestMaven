@@ -75,7 +75,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>your.package.YourMainClass</mainClass> <!-- Замените на ваш главный класс -->
+                            <mainClass>org.example.Main</mainClass> <!-- Замените на ваш главный класс -->
                         </manifest>
                     </archive>
                     <descriptorRefs>
