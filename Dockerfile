@@ -1,6 +1,6 @@
 # Базовый образ: выбираем openjdk:8-jdk-alpine для минимального размера.
 # Alpine Linux - дистрибутив Linux, известный своим небольшим размером.
-FROM maven:3-openjdk:8-jdk-alpine
+FROM maven:3-openjdk:8-jdk-alpine as builder
 
 # Метка для указания информации о сборке (опционально, но полезно).
 LABEL maintainer="your.email@example.com"
