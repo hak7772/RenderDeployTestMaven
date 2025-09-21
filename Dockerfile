@@ -7,7 +7,9 @@ LABEL maintainer="your.email@example.com"
 
 # Создаем рабочую директорию внутри контейнера для нашего приложения.
 WORKDIR /app
+RUN mvn package
 
+FROM openjdk:8-jre-alpine
 # Копируем JAR-файл Spring Boot приложения в контейнер.
 # Предполагается, что Maven/Gradle собирает JAR в target/.
 # Убедитесь, что путь соответствует вашей структуре проекта.
