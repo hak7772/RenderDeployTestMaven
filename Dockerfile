@@ -7,7 +7,7 @@ RUN mvn package
 
 FROM openjdk:8-jre-alpine
 
-COPY --from=builder /usr/src/app/target/*.jar /app.jar
+COPY --from=builder /usr/src/application/target/*.jar /app.jar
 
 EXPOSE 8080
 
