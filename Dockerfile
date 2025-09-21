@@ -6,6 +6,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 # Соберите приложение.
+RUN mvn clean install
 RUN mvn clean package
 
 # Этап запуска с использованием минимального образа JRE.
